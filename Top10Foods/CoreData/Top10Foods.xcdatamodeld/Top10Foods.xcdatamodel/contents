@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Recepies" representedClassName=".Recepies" syncable="YES">
+        <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="searchWords" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serving" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SectionType" inverseName="recepies" inverseEntity="SectionType" syncable="YES"/>
+    </entity>
+    <entity name="SectionType" representedClassName=".SectionType" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="recepies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recepies" inverseName="relationship" inverseEntity="Recepies" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Recepies" positionX="-162" positionY="-261" width="128" height="163"/>
+        <element name="SectionType" positionX="-405" positionY="-243" width="128" height="103"/>
+    </elements>
+</model>

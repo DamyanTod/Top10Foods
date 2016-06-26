@@ -1,0 +1,16 @@
+PODS:
+  - Bolts/Tasks (1.4.0)
+  - ContextMenu.iOS (1.1.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+
+DEPENDENCIES:
+  - ContextMenu.iOS (~> 1.1.0)
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  ContextMenu.iOS: 7f3b63915e660f51aada2c4285c40a837b2c9737
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
+
+COCOAPODS: 0.39.0
